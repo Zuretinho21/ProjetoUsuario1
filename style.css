@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.userScreen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 400px;
+    height: 670px;
+    background-color: #3428D5;
+}
+
+/* itens nas duas telas */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    right: 0;
+    top: 0;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+/* itens nas duas telas */
+.logo img {
+    width: 100px;
+    height: 80px;
+}
+
+/* Perfil */
+.user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+}
+
+.subUser {
+    display: grid;
+    place-items: center;
+    width: 50%;
+    height: 60%;
+    border-radius: 100%;
+    background-color: #DCDCDC;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    margin-top: 15%;
+}
+
+.editUser {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+    height: 45px;
+}
+
+.editUser a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.editUser img {
+    height: 35px;
+    width: 35px;
+}
+
+/* Informações / Enviar */
+.dados {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 185px;
+}
+
+.dados input {
+    text-align: center;
+    width: 70%;
+    height: 40px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: aqua;
+    padding-left: 10px;
+    font-size: 16px;
+    color: #696969;
+    font-weight: 600;
+}
+
+.dados input::placeholder {
+    font-size: 16px;
+    color: #696969;
+    font-weight: 600;
+}
+
+.dados a button {
+    border: none;
+    outline: none;
+    width: 70px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #F0F;
+    color: #FFF;
+    transition: .2s ease-in-out;
+    filter: drop-shadow(0px 4px black);
+}
+
+.dados button:hover {
+    transform: scale(1.08);
+}
+
+/* itens nas duas telas - textos */
+span a {
+    font-size: 20px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+/* itens nas duas telas - textos */
+span a::after {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    background-color: #FFF;
+    left: 0;
+    bottom: 0;
+    transition: .5s ease-in-out;
+}
+
+/* itens nas duas telas - textos */
+span a:hover::after {
+    width: 100%;
+    height: 2px;
+}
+
+/* itens nas duas telas - textos */
+span {
+    position: relative;
+}
+
+/* Criar O.S */
+.create {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+}
+
+.subcreate {
+    position: absolute;
+    bottom: 100px;
+    width: 280px;
+    height: 200px;
+    border: 2px dashed #FFF;
+}
+
+.subcreate a {
+    text-align: center;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 30px;
+}
+
+.creat {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+
+.itemOne {
+    margin-top: 20px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #FFF;
+    border-radius: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.itemOne::after::before {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    background-color: #FFF;
+}
+
+/* Ver O.S */
+.view {
+    text-align: center;
+    width: 100%;
+    height: 170px;
+}
+
+.tela {
+    width: 320px;
+    height: 590px;
+    background-color: #d1d1d1;
+    display: grid;
+    place-items: center;
+}
+
+.telaInfo {
+    width: 300px;
+    height: 570px;
+}
+
+.title-os {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+}
+
+.title-os h1 {
+    text-align: center;
+    font-size: 30PX;
+}
+
+.title-os h2 {
+    font-size: 15px;
+    text-align: center;
+}
+
+.Info-os {
+    width: 100%;
+    height: 200px;
+}
+
+.Info-os input{
+    width: 100%;
+    height: 30px;
+    border: 1px solid #000;
+    margin-top: 15px;
+    padding: 10px;
+    outline: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+}
+
+#input-4{
+text-align: center;
+margin-top: 15px;
+}
+
+.info-input {
+    width: 100%;
+    height: 200px;
+}
+
+.sub-info-input{
+    display: flex;
+    align-items: center;
+}
+
+.sub-info-input input{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.box-input-text input{
+    margin-top: 10px;
+    width: 100%;
+    height: 100px;
+    opacity: 50%;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    padding: 10px;
+}
+
+.info-btn-enviar {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-btn-enviar button{
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: #f0f;
+    color: #FFF;
+}
+
+.Ossalva {
+    width: 90%;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+}
+
+.Ossalva > a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
